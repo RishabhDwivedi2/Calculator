@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="B(style).css">
+</head>
+<body>
+    <div class="top">
+        <a href="A(index).html"><img class="t1" src="icons8-calculator-50.png"  alt=""></a>
+    </div>
+    <div class="wrapper">
+        <form action="">
+        <input type="text" name="answers" id="">
+            <br>
+        <input type="button" value="C" onclick="form.answers.value='' ">
+        <input type="button" value="." onclick="form.answers.value+='.' ">
+        <input type="button" value="%" onclick="form.answers.value+='%' ">
+            <br>
+        <input type="button" value="1" onclick="form.answers.value+='1' ">
+        <input type="button" value="2" onclick="form.answers.value+='2' ">
+        <input type="button" value="3" onclick="form.answers.value+='3' ">
+            <br>
+        <input type="button" value="4" onclick="form.answers.value+='4' ">
+        <input type="button" value="5" onclick="form.answers.value+='5' ">
+        <input type="button" value="6" onclick="form.answers.value+='6' ">
+        <br>
+        <input type="button" value="7" onclick="form.answers.value+='7' ">
+        <input type="button" value="8" onclick="form.answers.value+='8' ">
+        <input type="button" value="9" onclick="form.answers.value+='9' ">
+        <br>
+        <input type="button" value="+" onclick="form.answers.value+='+' ">
+        <input type="button" value="-" onclick="form.answers.value+='-' ">
+        <input type="button" value="/" onclick="form.answers.value+='/' ">
+        <br>
+        <input type="button" value="*" onclick="form.answers.value+='*' ">
+        <input type="button" value="0" onclick="form.answers.value+='0' ">
+        <input type="button" value="=" onclick="form.answers.value=eval(form.answers.value) ">
+
+    </form>
+    </div>
+    
+</body>
+</html>

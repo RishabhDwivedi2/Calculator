@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background-color: aquamarine;
+}
+.wrapper{
+    display: flex;
+    padding: 50px;
+    border-radius: 12px;
+    background-color: rgb(48, 47, 47);
+    flex-direction: column;
+    margin: 5pc 15pc;
+    box-shadow: -5px 0 10px rgb(48, 47, 47);
+
+}
+.w1{
+    display: flex;
+    margin-bottom: 30px ;
+    justify-content: space-between;   
+    
+}
+.w2{
+    text-align: center;
+    margin-top: 10px;
+}
+.below{
+    color: white;
+}
+#showData{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+.left{
+    /* padding: 20px 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    margin-left: 20px;
+}
+.student, .grade, .calcy{
+    color: aquamarine;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    animation: anime .75s linear infinite;
+}    
+.right{
+    /* padding: 20px 20px; */
+    /* margin: 10px; */
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.subjects{
+    margin: 2px;
+    padding: 15px;
+    background: transparent;
+    color: white;
+    font-style: italic;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+.btn{
+    color: aquamarine;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    background: transparent;
+    font-weight: 800;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgba(127, 255, 212, 0.767);
+
+}
+.bottom{
+    display: block;
+}
+.next_page{
+    display: flex;
+    justify-content: end;
+    margin: 60px;
+}
+#n1{
+   color: rgb(48, 47, 47);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+#n1:hover{
+    border-bottom: 2px solid rgb(48, 47, 47);
+}
+@keyframes anime {
+    0%{
+    font-size: 40px;
+
+    }
+    100%{
+    font-size: 42px;
+
+    }
+    
+}
+@media (max-width: 1014px) {
+    .wrapper{
+        padding: 30px;
+        margin: 4pc 13pc;
+        }
+    .w1{
+        margin-bottom: 25px ;
+    }
+    .w2{
+        margin-top: 8px;
+    }
+    
+    #showData{
+        font-weight: 400;
+        font-size: 13px;
+    }
+    .left{
+        margin-left: 18px;
+    }
+    .student, .grade, .calcy{
+        font-size: 30px;
+        font-weight: 400;
+    }    
+   .subjects{
+        margin: 2px;
+        padding: 13px;
+    }
+    .btn{
+        margin-top: 8px;
+        font-weight: 500;
+    }
+       
+}
+@media (max-width: 874px) {
+    .wrapper{
+        padding: 10px;
+        margin: 2pc 8pc;
+        }
+    .w1{
+        margin-bottom: 15px ;
+    }
+    .w2{
+        margin-top: 5px;
+    }
+    
+    #showData{
+        font-weight: 400;
+        font-size: 8px;
+    }
+    .left{
+        margin-left: 15px;
+    }
+    .student, .grade, .calcy{
+        font-size: 20px;
+        font-weight: 300;
+    }    
+   .subjects{
+        margin: 2px;
+        padding: 8px;
+    }
+    .btn{
+        margin-top: 8px;
+        font-weight: 300;
+    }
+     #n1{
+         font-weight: 500;
+         font-size: 10px;
+     }  
+     
+}
+@media (max-width: 715px) {
+    .wrapper{
+        padding: 30px;
+        margin: 4pc 13pc;
+        width: 50%;    
+    }
+      }

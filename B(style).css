@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background: rgba(0, 68, 255, 0.945);
+    height: 100vh;
+    }
+.top{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.top img{
+    width: 60px;
+    height: 60px;
+    padding: 10px 10px;
+}
+.top img:hover{
+    width: 63px;
+    height: 63px;
+    padding: 10px 10px;
+}
+.top p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 5px;
+
+}
+.top p:hover{
+    background-color: rgba(160, 157, 157, 0.205);
+    box-shadow: -5px 0 10px rgba(160, 157, 157, 0.205);
+    cursor: pointer;
+}
+.wrapper{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 15px;
+    animation: anime 6s ease infinite;
+}
+input{
+    width: 85px;
+    outline: none;
+    border: none;
+}
+form{
+    text-align: center;
+}
+input[type="text"]{
+    padding: 20px 10px;
+    width: 16.1pc;
+    font-size: 25px;
+    text-align: end;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+input[type="text"]:hover{
+    box-shadow: 0px 0px 25px 0px rgba(245, 222, 179, 0.788);
+}
+input[type="button"]{
+    padding: 15px 15px;
+    margin: 4px;
+    
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(160, 157, 157, 0.568);
+    color: white;
+}
+input[type="button"]:hover{
+    background-color: rgba(160, 157, 157, 0.205);
+    box-shadow:0px 0 10px rgba(255, 255, 255, 0.836);
+
+}
+@media (max-width:639px) {
+    .wrapper{
+        width: 40%;    
+    }
+    input{
+        width: 50px;
+        
+    }
+    input[type="text"]{
+        padding: 15px 5px;
+        width: 10pc;
+    }
+}
+@media (max-width:593px) {
+    .wrapper{
+        width: 40%;    
+    }
+    input{
+        width: 50px;
+        
+    }
+    input[type="text"]{
+        padding: 15px 5px;
+        width: 10pc;
+    }   
+}
+@media (max-width:457px) {
+    .wrapper{
+        width: 20%;    
+    }
+    input{
+        width: 10px;
+        
+    }
+    input[type="text"]{
+        padding: 10px 5px;
+        width: 8pc;
+        font-size: 15px;
+        
+        margin-bottom: 5px;
+    }
+    input[type="button"]{
+        padding: 10px 10px;
+        margin: 1px;
+        font-size: 10px;
+        font-weight: 400;
+        }   
+}
+@media (max-width:376px) {
+    .wrapper{
+        width: 15%;    
+    }
+    input{
+        width: 8px;
+        
+    }
+    input[type="text"]{
+        padding: 5px 1px;
+        width: 3pc;
+        font-size: 10px;
+        
+        margin-bottom: 2px;
+    }
+    input[type="button"]{
+        padding: 5px 5px;
+        margin: 1px;
+        font-size: 8px;
+        font-weight: 300;
+        }   
+}
+
+@keyframes anime {
+    0%{
+        box-shadow: -15px 0 15px rgba(255, 255, 255, 0.37);
+     }
+    50%{
+        box-shadow: 15px 10px 15px rgba(255, 255, 255, 0.37);
+       }
+    100%{
+        box-shadow: -15px 0 15px rgba(255, 255, 255, 0.37);
+     }
+}
